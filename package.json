@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-performance-check",
+  "version": "0.1",
+  "main": "index.js",
+  "repository": "https://github.com/totomaru12/nodejs-performance-check.git",
+  "author": "totomaru",
+  "license": "MIT",
+  "private": true
+}
