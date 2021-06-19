@@ -6,7 +6,7 @@ function randomNumber() {
 }
 
 function checkSpecArrayAndObjectAccess() {
-    const SUM＿ACCESS_COUNT = 1000 * 600;
+    const SUM＿ACCESS_COUNT = 1000 * 100;
     const array = makeArray(SUM＿ACCESS_COUNT);
     const map = makeHashMap(SUM＿ACCESS_COUNT);
 
@@ -67,8 +67,4 @@ function findBySequential(array, key) {
     return null;
 }
 
-function main () {
-    checkSpecArrayAndObjectAccess();
-}
-
-main();
+module.exports = checkSpecArrayAndObjectAccess
