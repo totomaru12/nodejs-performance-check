@@ -33,9 +33,9 @@ function checkSpecArrayAndObjectAccess() {
     console.log(`array compute end`);
 
     console.log(`RESULT`);
-    console.log(`  map:   ${mapTimeMs}`);
-    console.log(`  array: ${arrayTimeMs}`);
-    console.log(`  array / map: ${Math.floor(arrayTimeMs / mapTimeMsRaw)}`);
+    console.log(`  map    (ms) : ${mapTimeMs}`);
+    console.log(`  array  (ms) : ${arrayTimeMs}`);
+    console.log(`  array / map : ${Math.floor(arrayTimeMs / mapTimeMsRaw)}`);
 }
 
 function makeHashMap(size) {
