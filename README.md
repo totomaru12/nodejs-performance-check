@@ -2,6 +2,12 @@
 
 this tool checks nodejs performance
 
+## setup
+
+```
+yarn
+```
+
 ## usage
 
 ```
