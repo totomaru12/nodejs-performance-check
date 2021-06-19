@@ -5,5 +5,5 @@ this tool checks nodejs performance
 ## usage
 
 ```
-node check
+node nodejs_performance_check
 ```
