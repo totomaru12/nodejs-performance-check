@@ -8,7 +8,7 @@ function usage () {
   const toolName = 'nodejs_performance_check'
   console.log('usage:')
   console.log(`  $ node ${toolName} ${PARAMETER_CHECK_TYPE.LIST_HASH_DIFF}`)
-  console.log('      check list and hash performance diffrence')
+  console.log('      check list and hash performance difference')
 }
 
 function main () {
