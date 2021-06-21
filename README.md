@@ -1,6 +1,6 @@
 # nodejs-performance-check
 
-this tool checks nodejs performance
+check nodejs performance
 
 ## setup
 
