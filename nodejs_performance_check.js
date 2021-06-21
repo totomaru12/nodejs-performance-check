@@ -1,31 +1,21 @@
 const checkSpecArrayAndObjectAccess = require('./list_hash_performance')
-
-const PARAMETER_CHECK_TYPE = {
-  LIST_HASH_DIFF: '--list-hash'
-}
-
-function usage () {
-  const toolName = 'nodejs_performance_check'
-  console.log('usage:')
-  console.log(`  $ node ${toolName} ${PARAMETER_CHECK_TYPE.LIST_HASH_DIFF}`)
-  console.log('      check list and hash performance difference')
-}
+const { program } = require('commander')
 
 function main () {
-  console.log('tool started')
-  if (process.argv.length !== 3) {
-    console.log('E: invalid parameter')
-    usage()
-    return
-  }
-  if (process.argv[2] === PARAMETER_CHECK_TYPE.LIST_HASH_DIFF) {
+  const options = program
+    .description('check nodejs performance')
+    .option('-l --list-hash', 'check performance difference between list and hash')
+    .addHelpText('after',
+`
+Example:
+  $ nodejs_performance_check --list-hash
+`)
+    .parse(process.argv)
+    .opts()
+
+  if (options.listHash) {
     checkSpecArrayAndObjectAccess()
-  } else {
-    console.log('E: invalid parameter')
-    usage()
-    return
   }
-  console.log('tool ended')
 }
 
 main()
