@@ -11,7 +11,7 @@ yarn
 ## usage
 
 ```
-node nodejs_performance_check
+node nodejs_performance_check --list-hash
 ```
 
 ## editor requirements
